@@ -1,0 +1,260 @@
+@media (max-width:1300px){
+    .mid-content{
+        max-width: 100%;
+        margin: auto;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width:1022px){
+    html {
+        font-size: 56.5%;
+    }
+}
+@media (max-width:1014px){
+    .p-content ul li span {
+        width: 4.6rem;
+        font-size: 3rem;
+    }
+    .p-content ul li {
+        font-size: 1.9rem;
+    }
+    
+}
+
+@media (max-width:928px){
+    html {
+        font-size: 50.5%;
+    }
+    .section-title.newslatter-title h2 {
+        margin-top: 4.6rem;
+        font-size: 3.4rem;
+    }
+    .section-title h1 {
+        font-size: 4.4rem;
+        margin-bottom: 3rem;
+        font-weight: 500;
+    }
+}
+@media (max-width:834px){
+    html {
+        font-size: 46.5%;
+    }
+    .pricing-table-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .member {
+        width: 46%;
+        margin-left: 2%;
+        margin-bottom: 2rem;
+    }
+}
+
+.primary-menu span {
+  display: none;
+}
+input.mobile-menu-check {
+  display: none;
+}
+
+
+@media (max-width:774px){
+    .i-item {
+        width: 98%;
+        margin-bottom: 3rem;
+    }
+    .video-content-right h3 {
+        font-size: 4rem;
+        font-weight: 400;
+        margin-bottom: 3.5rem;
+    }
+    
+ 
+    .header-logo {
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .logo img {
+        float: inherit;
+    }
+    .logo span {
+        position: relative;
+        top: -2.4rem;
+    }
+    /* responsive menu icon */
+    .primary-menu ul {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+    }
+    .primary-menu .mobile-menu-check:checked ~ ul{
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+    }
+    .primary-menu ul li {
+        position: relative;
+        display: block;
+    }
+    .primary-menu ul li ul {
+        left: 90px;
+        top: -59px;
+      
+    }
+    .primary-menu ul li ul li a {
+        line-height: 30px;
+    }
+    .primary-menu ul li a {
+        line-height: 5.9rem;
+    }
+    .primary-menu ul li ul li {
+        display: block;
+        background: #ddd;
+    }
+    input.mobile-menu-check {
+        position: relative;
+        top: 26px;
+        right: -6px;
+        opacity: 0;
+        display: block;
+    }
+
+
+
+
+
+    .header-menu {
+        width: 100%;
+    }
+    .header-button {
+        width: 100%;
+        text-align: right;
+        position: absolute;
+        top: 72px;
+        right: 15px;
+    }
+    .primary-menu span {
+        font-size: 4rem;
+        color: #6278df;
+        cursor: pointer;
+        display: block;
+    }
+}
+
+@media (max-width:576px){
+    .video-left {
+        width: 100%;
+    }
+    .video-content-right {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .video-content-right h3 {
+        font-size: 3.5rem;
+    }
+    .video-content-right p {
+        font-size: 2rem;
+        text-align: justify;
+    }
+    .section-title h1 {
+        font-size: 4rem;
+    }
+    .section-title h2 {
+        font-size: 4rem;
+    }
+    
+    .pricing-table-item:nth-child(3) {
+        margin: auto;
+    }
+    .pricing-table-item {
+        width: 100%;
+    }
+    .p-button {
+        text-align: left;
+    }
+    .team-section .section-title  h2 {
+        font-size: 3.3rem;
+    }
+    .member {
+        width: 46%;
+    }
+    .member:nth-child(4) {
+        margin: 0;
+    }
+    .section-title.newslatter-title h2 {
+  
+        font-size: 3.3rem;
+    }
+    .i-item {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    .i-item:nth-child(3) {
+        margin: 0;
+    }
+    .content-left-map {
+        width: 100%;
+    }
+    .content-right-form {
+        width: 100%;
+        text-align: center;
+    }
+    .default-input {
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+    .b-hading {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .bt-content {
+        width: 100%;
+        text-align: center;
+    }
+    .blog-post-item {
+        width: 100%;
+        margin-bottom: 3rem;
+
+    }
+    .service-box {
+        width: 100%;
+        text-align: center;
+    }
+    .s-icon {
+        width: auto;
+        float: initial;
+        min-height: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+   
+   
+}
+
+@media (max-width:433px){
+    .banner-section {
+        padding: 10rem 0;
+     
+    }
+    .banner-content h2 {
+        font-size: 4rem;
+      
+    }
+    .default-btn {
+ 
+        margin-left: 0;
+        margin-right: 0;
+        width: 40%;
+        margin-bottom: 2rem;
+    }
+    .banner-bottom {
+        padding: 7rem 0;
+    }
+    .member {
+        width: 100%;
+        margin-left: auto;
+    }
+}

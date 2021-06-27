@@ -1,0 +1,611 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.mid-content{
+    max-width: 100rem;
+    margin: auto;
+}
+
+.p-bg{
+    background-color:#f7f9ff;
+}
+
+/*  Begain main css  */
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.header-section {
+	background-color: #fff;
+	border-bottom: 0.1rem solid #ddd;
+	padding: 0.6rem 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 99;
+	width: 100%;
+}
+.header-section a{
+    color: #010101;
+}
+.header-logo{
+    width: 30%;
+}
+.logo img {
+    height: 6rem;
+    float: left;
+    margin-right: 1rem;
+}
+.logo span {
+    display: inline-block;
+    margin-top: 1.4rem;
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+.header-menu {
+    width: 56%;
+}
+.header-button {
+    width: 14%;
+    text-align: right;
+}
+.header-btn {
+	border: 0.2rem solid #6278df;
+	display: inline-block;
+	padding: 1rem 3rem;
+	border-radius: 1rem;
+	margin-top: 0.8rem;
+	color: #6278df !important;
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+.primary-menu{}
+.primary-menu ul{}
+.primary-menu ul li{
+    display: inline-block;
+}
+.primary-menu ul li a {
+    display: block;
+    padding: 0 2rem;
+    font-size: 1.7rem;
+    line-height: 6rem;
+}
+.primary-menu ul li a:hover{}
+
+/*  DropDown Mneu css  */
+.primary-menu ul li{
+    position: relative;
+}
+.primary-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 30rem;
+    background: #fff;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.primary-menu ul li ul li{
+    display: block;
+}
+.primary-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+
+/* Banner CSS */
+.banner-section {
+	background: url(https://i.ibb.co/HphGz5z/mbr-4.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 20rem 0;
+	color: #fff;
+	position: relative;
+	z-index: 9;
+	margin-top: 7rem;
+}
+.banner-section::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    background: rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+.banner-content{}
+.banner-content h3 {
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+.banner-content h2 {
+    font-size: 6rem;
+    margin: 3rem 0;
+}
+
+.default-btn {
+	color: #7d7d7d;
+	padding: 2rem 3rem;
+	background: #fff;
+	display: inline-block;
+	font-size: 2rem;
+	font-weight: 600;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+    border-radius: 1rem;
+    transition:.4s;
+}
+.default-btn:hover{
+    background: #6278df;
+    color: #fff;
+}
+
+/*  Banner Section  */
+.banner-bottom{
+    background: #f7f9ff;
+    padding: 10rem 0;
+}
+.video-left{
+    width: 48%;
+}
+.video-content-right{
+    width: 48%;
+}
+.video-content-right h3 {
+    font-size: 5.1rem;
+    font-weight: 400;
+    margin-bottom: 3.5rem;
+}
+.video-content-right p {
+    color: #767676;
+    font-size: 1.8rem;
+    line-height: 1.7em;
+}
+
+/*  Servcie Section  */
+.service-section{
+    background: #fff;
+    padding: 10rem 0;
+}
+
+.section-title h1 {
+    font-size: 6.4rem;
+    margin-bottom: 3rem;
+}
+.section-title p {
+    color: #767676;
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+
+/*  Serice Item  */
+.services-items {
+    margin-top: 9rem;
+}
+.service-box {
+    width: 32%;
+    box-shadow: 0.4rem 0.4rem 2rem 0 rgba(0,0,0,.1);
+    margin-right: 2%;
+    margin-bottom: 3rem;
+    padding: 2.5rem;
+    box-sizing: border-box;
+}
+.service-box:nth-child(3n+3) {
+    margin-right: 0;
+}
+.s-icon {
+    width: 6rem;
+    float: left;
+    min-height: 16.8rem;
+    font-size: 4.5rem;
+    color: #6278df;
+    margin-right: 1rem;
+}
+.s-content {
+    margin-top: 0.8rem;
+}
+.s-content h3 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.s-content p {
+    color: #767676;
+    font-size: 2rem;
+    line-height: 1.6em;
+}
+
+/*  Pricing table css  */
+.pricing-table-section{
+    background: #f7f9ff;
+    padding: 5rem;
+}
+.section-title h2 {
+    font-size: 5.6rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.pricing-tables {
+    margin-top: 8rem;
+}
+.pricing-table-item{
+    width: 32%;
+    margin-right: 2%;
+    background: #fff;
+    box-shadow: 0.3rem 0.4rem 3rem 0 rgba(98, 120, 223,.1);
+}
+.pricing-table-item:nth-child(3){
+    margin-right: 0;
+}
+
+.p-heading{
+    padding: 3rem;
+    border-bottom: 0.1rem solid #ddd;
+    transition: .3s;
+}
+.p-content{
+    padding: 3rem;
+}
+
+.p-heading h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.p-heading h1 {
+    margin: 4.2rem 0;
+    font-size: 5.6rem;
+}
+.p-heading h1 span {
+    font-size: 2rem;
+}
+.p-heading h5 {
+    font-weight: 500;
+    font-size: 2.1rem;
+    margin-bottom: 2.2rem;
+}
+.p-heading p {
+    font-size: 2rem;
+    line-height: 1.5em;
+}
+
+.p-content ul{
+    list-style: none;
+}
+.p-content ul li {
+    margin: 2.5rem 0;
+    color: #767676;
+    font-size: 2.1rem;
+}
+.p-content ul li span {
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #6278df;
+    width: 5.7rem;
+}
+.p-button{
+    margin-top: 6rem;
+}
+.p-button .default-btn{
+    box-shadow: 0.3rem 0.4rem 3rem 0 rgba(98, 120, 223,.3);
+}
+
+
+.pricing-table-item:hover .p-heading{
+    background: #6278df;
+    color: #fff;
+}
+.pricing-table-item:hover .p-button .default-btn{
+    background-color: #6278df;
+    color: #fff;
+}
+
+
+.team-section{
+    padding: 10rem 0;
+}
+.team-section .section-title  h2{
+    font-size: 4rem;
+}
+.team-members{}
+
+.member{
+    width: 23%;
+    margin-right: 2%;
+    background: #fff;
+    box-shadow: 0.3rem 0.4rem 3rem 0 rgba(98, 120, 223,.2);
+}
+.member img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+.member-bio {
+    padding: 3rem;
+}
+.member-bio h4 {
+    font-size: 2.3rem;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+.member-bio p {
+    color: #767676;
+    font-size: 1.9rem;
+}
+.team-members {
+    margin-top: 8rem;
+}
+
+
+/*   Newlatter css */
+.newslatter-section{
+    padding: 10rem 0;
+}
+.section-title.newslatter-title h2{}
+
+.newslatter-from {
+    margin-top: 6rem;
+}   
+
+.default-input {
+    width: 35rem;
+    padding: 2rem 1.5rem;
+    font-size: 2rem;
+    border: 0.1rem solid #e4e4e4;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.4rem 3rem 0 rgba(98, 120, 223,.1);
+    transition: .4s;
+    box-sizing: border-box;
+}
+.default-input:focus{
+    box-shadow: 0.3rem 0.4rem 3rem 0 rgba(98, 120, 223,.5); 
+    border: 0.1rem solid #6278df;  
+}
+.submit-btn {
+    background: #6278df;
+    font-size: 2.3rem;
+    color: #fff;
+    border: none;
+    padding: 2rem 9rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 1.5rem;
+    box-shadow: 0.3rem 0.4rem 3rem 0 rgba(98, 120, 223,.2);
+    border: 0.2rem solid transparent;
+    transition: .4s;
+}
+.submit-btn:hover{
+    box-shadow: 0.3rem 0.4rem 3rem 0 rgba(98, 120, 223,.4); 
+    background: #fff;
+    color: #6278df;
+    border: 0.2rem solid #6278df;
+}
+.section-title.newslatter-title h2 {
+    margin-top: 5.6rem;
+    font-size: 4.4rem;
+}
+
+
+/*  Blog Section CSS  */
+.blog-section{
+    padding: 10rem 0;
+    padding-top: 2rem;
+}
+.blog-title {
+    padding: 6rem 0;
+}
+.blog-items{}
+
+.b-hading{
+    width: 50%;
+}
+.b-hading h2 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    margin-top: 2.5rem;
+}
+.bt-content{
+    width: 50%;
+}
+.bt-content p {
+	color: #767676;
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 1.7em;
+}
+.blog-post-item img {
+    float: left;
+    width: 50%;
+}
+.blog-post-item{
+    width: 48%;
+    background: #fff;
+    box-shadow: 0.3rem 0.4rem 3rem 0 rgba(98, 120, 223,.2); 
+}
+
+.blog-post-content {
+    margin-top: 1rem;
+    float: right;
+    width: 48%;
+}
+.blog-post-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.blog-post-content p {
+    color: #767676;
+    font-size: 2rem;
+    line-height: 1.6em;
+}
+
+
+/*  Testimonial section  */
+.testimonial-section{
+    padding: 10rem 0;
+}
+.testimonial-items{
+    margin-top: 10rem;
+}
+
+.i-item{
+    width: 32%;
+    margin-right: 2%;
+}
+.i-item:last-child{
+    margin-right: 0;
+}
+
+.t-content{
+    background: #fff;
+    box-shadow: 0.3rem 0.4rem 3rem 0 rgba(98, 120, 223,.2); 
+    padding: 5rem 4rem;
+    box-sizing: border-box;
+    margin-bottom: 4.2rem;    
+
+    position: relative;
+}
+.t-content::after{
+    content: "";
+    position: absolute;
+    bottom: -1.9rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 2rem 2rem 0 2rem;
+    border-color: #ffffff transparent transparent transparent;
+}
+.t-content p{
+    color: #767676;
+    font-size: 2rem;
+    line-height: 1.8em;
+    position: relative;
+    margin-bottom: 0;
+}
+.t-content p::before {
+	content: "\f10d";
+	font-family: FontAwesome;
+	font-size: 8rem;
+	position: absolute;
+	opacity: .15;
+	left: -1.7rem;
+	top: -0.4rem;
+}
+
+.t-user-bio {
+    position: relative;
+    top: 1.3rem;
+}
+.t-user-bio h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+.t-user-bio span {
+    display: inline-block;
+    color: #767676;
+    font-size: 1.7rem;
+}
+.t-user-img {
+    width: 25rem;
+    margin: auto;
+}
+.t-user-img img {
+    border-radius: 50%;
+    width: 8rem;
+    float: left;
+    margin-right: 2.4rem;
+}
+
+
+.contact-section {
+    padding-top: 8rem;
+}
+
+.contact-row{}
+.content-left-map{
+    width: 48%;
+}
+.content-right-form{
+    width: 48%;
+    margin-top: 4rem;
+}
+
+.footer {
+    padding: 2rem 0;
+    margin-top: 6rem;
+}
+.footer p {
+    font-size: 2rem;
+}
+.footer-contact-from .w100{
+    width: 100%;
+}
+.footer-contact-from .w50{
+    width: 48%
+}
+
+.footer-contact-from .default-input {
+    margin-bottom: 2rem;
+}
+.footer-contact-from {
+    margin-top: 6rem;
+}
+.footer-contact-from .submit-btn {
+    margin-left: 0;
+}
+.footer-contact-from textarea {
+    height: 20rem;
+}
+.content-right-form p {
+    font-size: 2.1rem;
+    color: #767676;
+    line-height: 1.8em;
+}
+.content-right-form h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 2.2rem;
+}
+.footer-contact-from {
+    margin-top: 6rem;
+}
